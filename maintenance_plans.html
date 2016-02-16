@@ -95,7 +95,7 @@ function unhoverPlatinum2(element) {
          );
 }
 
-<!--Double Maintenance Plans-->
+<!--Protection Icon-->
 		function hoverProtection(element) {
     element.setAttribute('src', 
          'img/protection-icon.png'//Replace this part with the new button hover image
@@ -161,6 +161,9 @@ function unhoverProtection(element) {
 									</li><li>
 										<a href="services.html">
 											SERVICE</a>
+									</li><li>
+										<a href="maintenance_plans.html">
+											MAINTENANCE PLANS</a>
 									</li>
 							
 									
@@ -180,16 +183,16 @@ function unhoverProtection(element) {
 					<div class="container">
 						<div class="row">
 						<!--Protection Icon-->
-							<div class="col-sm-6 col-md-5 feature text-right">
+							<div class="col-sm-6 col-md-4 feature text-right">
 								<img alt="Protect Yourself" src="img/protection-icon-grey.png" onmouseover="hoverProtection(this)" onmouseout="unhoverProtection(this)" height="200" width="180"/>
 							</div>
 						<!--Protection Words-->
-							<div class="col-sm-6 col-sm-offset-1 text-center feature" style="padding-bottom: 50px;">
+							<div class="col-sm-4 col-md-5 text-left feature" style="padding-bottom: 25px;">
 								<h2 class="text-white">Protect your Comfort Systems with a CoolHeat Maintenance Plan</h2>
 								
 						<!--Learn More Button-->		
 							</div>
-							<div class=""col-sm-12 text-center"">
+							<div class="col-sm-12 text-center" style="padding-bottom: 25px;">
 							<a class="btn btn-filled-2" href="#take-action" target="_self">Learn More about Service &amp; Maintenance from a CoolHeat Comfort Technician</a>
 							</div>
 						</div>
@@ -203,7 +206,12 @@ function unhoverProtection(element) {
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
 							<h4>Maintenace Plans</h4>
-							<p>Have peace of mind knowing your Comfort Systems are properly maintained by our professionally trained Comfort Technicians.</p>
+							<p>Have peace of mind knowing your Comfort Systems are properly maintained by our professionally trained Comfort Technicians. Get Full Maintentance on one of your Comfort Systems. <a href="#double_protection" target="_self">See below if you're interested in coverage for more than one System.</a></p>
+							
+						
+							
+							
+							
 						</div>
 					</div>
 				
@@ -211,7 +219,8 @@ function unhoverProtection(element) {
 						<div class="col-sm-4 text-center feature">
 							<img alt="Silver Plan" src="img/Badge_Silver.png" onmouseover="hoverSilver1(this)" onmouseout="unhoverSilver1(this)" height="300" width="280"/>
 							<h5>Silver</h5>
-							<p>-Full Maintenance & Diagnostic Report<br>
+							<p>-Full Maintenance<br>
+							    -Diagnostic Report<br>
 								-Safety Inspection<br>
 								-Guaranteed 24 hour Priority Service<br></p>
 						</div>
@@ -220,7 +229,8 @@ function unhoverProtection(element) {
 							<img alt="Gold Plan" src="img/Badge_Gold.png" onmouseover="hoverGold1(this)" onmouseout="unhoverGold1(this)" height="300" width="280"/>
 							<h5>Gold</h5>
 							<p>
-								-Full Maintenance & Diagnostic Report<br>
+								-Full Maintenance<br>
+							    -Diagnostic Report<br>
 								-Safety Inspection<br>
 								-Preferred Discounted Labour (50% off)<br>
 								-10% off New Equipment Purchases<br>
@@ -233,7 +243,8 @@ function unhoverProtection(element) {
 							<img alt="Platinum Plan" src="img/Badge_Platinum.png" onmouseover="hoverPlatinum1(this)" onmouseout="unhoverPlatinum1(this)" height="300" width="280"/>
 							<h5>Platinum</h5>
 							<p>
-								-Full Maintenance & Diagnostic Report<br>
+								-Full Maintenance<br>
+							    -Diagnostic Report<br>
 								-Safety Inspection<br>
 								-Free Labour!<br>
 								-20% off New Equipment Purchases<br>
@@ -247,12 +258,41 @@ function unhoverProtection(element) {
 			</section>
 			
 			
+			<!--Get This Deal Now! Form-->
+			<a id="take-action" class="anchor"></a>
+            <section class="cta cta-2 bg-secondary">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h3>Learn More from our Comfort Technicians</h3>
+							<h5>Send us a message for a complete home energy consultation from the Comfort Systems Experts at CoolHeat.</h5>
+							<form class="contained-form form-email" data-success="Thanks for your submission, we will be in touch shortly." data-error="Please fill all fields correctly.">
+								
+								<input type="text" name="name" class="signup-name-field validate-required" placeholder="Your Name">
+								<input type="text" name="email" class="validate-required validate-email signup-email-field" placeholder="Email Address">
+                                <input type="text" name="phone" placeholder="Phone Number">
+                                <input type="hidden" name="source" value="Furnace Page">
+								<input type="submit" value="Submit »">
+								<p class="sub">
+									* We don’t share your personal info with anyone.</p>
+								<iframe srcdoc="" class="mail-list-form">
+								</iframe>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			
+			
+			
 		<!--Double Maintenance Plans-->
+		<a id="double_protection" class="anchor"></a>
 			<section class="features features-2">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-10 col-md-offset-1 col-sm-12 text-center">
-							<h4>Maintenace Plans</h4>
+							<h4>Double Your Protection!</h4>
 							<p>Get covered with a CoolHeat Maintenance Plan for your Furnace or AC and get your second Comfort System covered for <strong>half the price!</strong></p>
 						</div>
 					</div>
@@ -261,7 +301,8 @@ function unhoverProtection(element) {
 						<div class="col-sm-4 text-center feature">
 							<img alt="Double Silver Plan" src="img/BadgeDouble_Silver.png" onmouseover="hoverSilver2(this)" onmouseout="unhoverSilver2(this)" height="300" width="400"/>
 							<h5>Silver</h5>
-							<p>-Full Maintenance & Diagnostic Report<br>
+							<p>-Full Maintenance<br>
+							    -Diagnostic Report<br>
 								-Safety Inspection<br>
 								-Guaranteed 24 hour Priority Service<br></p>
 						</div>
@@ -270,7 +311,8 @@ function unhoverProtection(element) {
 							<img alt="Double Gold Plan" src="img/BadgeDouble_Gold.png" onmouseover="hoverGold2(this)" onmouseout="unhoverGold2(this)" height="300" width="400"/>
 							<h5>Gold</h5>
 							<p>
-								-Full Maintenance & Diagnostic Report<br>
+								-Full Maintenance<br>
+							    -Diagnostic Report<br>
 								-Safety Inspection<br>
 								-Preferred Discounted Labour (50% off)<br>
 								-10% off New Equipment Purchases<br>
@@ -283,7 +325,8 @@ function unhoverProtection(element) {
 							<img alt="Double Platinum Plan" src="img/BadgeDouble_Platinum.png" onmouseover="hoverPlatinum2(this)" onmouseout="unhoverPlatinum2(this)" height="300" width="400"/>
 							<h5>Platinum</h5>
 							<p>
-								-Full Maintenance & Diagnostic Report<br>
+								-Full Maintenance<br>
+							    -Diagnostic Report<br>
 								-Safety Inspection<br>
 								-Free Labour!<br>
 								-20% off New Equipment Purchases<br>
@@ -297,6 +340,96 @@ function unhoverProtection(element) {
 			</section>
 		
 		
+			
+			
+			
+			
+			<!--FAQs-->
+            <section class="faq faq-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="faq">
+								<h5>Why CoolHeat Comfort?</h5>
+								<p>
+									Our family run business offers exceptional customer service as well as quality brand name products. Our Comfort Technicians will guide you through the whole process. From assessing your Comfort needs; to installing your Comfort System; to registering your warranty. Your Comfort Specialist will instruct you on proper Service & Maintenance of your equipment so it'll run at optimum efficiency for years to come. When you choose CoolHeat we are there with you for the life of your Comfort System and beyond.
+								</p>
+							</div>
+					<div class="faq">
+								<h5>What is done during a full service and cleaning?</h5>
+								<p>
+									When completing a full Maintenance of your HVAC System Coolheat Comfort will replace your current filter and give you a replacement filter to be changed out every 6 months. Our Comfort Technicians will complete a Full Maintenance Precision Tune-up; Cleaning & Safety Inspection of all units; and Verify all Pressures & Measurements. While we're there we'll also take a quick look at your other CoolHeat Comfort Systems.
+								</p>
+							</div>
+							
+						</div>
+					
+						<div class="col-sm-6">
+							<div class="faq">
+								<h5>What type of Financing Options are available?</h5>
+								<p>
+									Buying a Brand New Comfort System can be an expensive, upfront cost. CoolHeat offers Financing and Rental options. Your CoolHeat Comfort Technician will guide you through choosing the best value for your home.
+								</p>
+							</div>
+					
+					
+					<div class="faq">
+								<h5>What is your 10-Year Warranty?</h5>
+								<p>
+									Coolheat offers the best warranties in the HVAC business. Our 10 year Parts & Labour Warranty will have you sleeping comfortably for years to come.  Our professionally trained Comfort Technicians will guide you through other warranties available for your Comfort Systems during your free energy consultation. 
+								</p>
+							</div>
+					
+							<div class="faq">
+								<h5>What rebates are available?</h5>
+								<p>
+									Rebates for a new Home Comfort System depend on the type of System you're installing. By installing a new Comfort System you can qualify for a rebate from the Ontario Power Authority. Please <a href="#take-action" target="_self">contact us</a> for a free energy consultation for more information.
+								</p>
+							</div>
+							
+							
+						</div>
+					
+					</div>
+				
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h4>Still have questions? <a href="mailto:info@coolheatcomfort.ca">Let us know how we can help you.</a></h4>
+						</div>
+					</div>
+				</div>
+			</section>
+            
+			
+			
+			<!--Footer-->
+			<footer class="footer footer-1">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<ul class="social-links">
+								<li><a href="https://www.facebook.com/CoolheatComfortSystems"><i class="icon-facebook"></i></a></li>
+								<li><a href="https://twitter.com/CoolHeatComfort"><i class="icon-twitter"></i></a></li>
+							</ul>
+						</div>
+					
+						<div class="col-sm-4 text-center">
+							<p class="sub">
+                            	<a href="/pdf/10-year-warranty.pdf" target="_blank">10-Year Warranty</a> | <a href="/pdf/7-year-warranty.pdf" target="_blank">7-Year Warranty</a><br/>
+								© Copyright 2016 CoolHeat Comfort Systems - Coolheat is certified by the Technical Standards and Safety Authority (TSSA), Certificate Number #000222535
+							</p>
+						</div>
+					
+						<div class="col-sm-4 text-right">
+							<a href="index.html">
+								<img alt="Logo" src="img/logo-footer.jpg">
+							</a>
+						</div>	
+					</div>
+				</div>
+			</footer>
+		</div>
+			
 		
 		
 		
