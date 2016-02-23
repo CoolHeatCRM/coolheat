@@ -303,6 +303,10 @@ p a:hover {
 p.text-white a {
   color: #fff;
 }
+p.text-blue a {
+  color: #0000ff;
+}
+
 @media all and (max-width: 768px) {
   p.lead {
     font-weight: normal;
@@ -312,6 +316,7 @@ p.text-white a {
 }
 /*!---------- BUTTONS ----------*/
 .btn {
+  margin: 0 auto;
   display: inline-block;
   height: 55px;
   line-height: 53px;
@@ -418,6 +423,9 @@ a:hover {
 .text-white {
   color: #fff !important;
 }
+.text-blue{
+  color: #0000ff !important;
+}
 .muted-white {
   color: #f8f8f8;
 }
@@ -501,6 +509,28 @@ input[type="submit"]:hover {
   background: #0677d9;
   color: #fff;
 }
+
+input[type="submit1"] {
+  font-weight: 500 !important;
+  height: 54px;
+  line-height: 48px;
+  text-align: center;
+  background: #ed2027;
+  border: 1px solid #ed2027;
+  font-size: 18px;
+  font-weight: 300;
+  padding: 0 36px;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  color: #fff;
+}
+input[type="submit1"]:hover {
+  background: #4587c7;
+  border: 1px solid #4587c7;
+  color: #fff;
+}
+
 input:focus,
 textarea:focus {
   outline: none;
@@ -529,6 +559,12 @@ form a {
   border-left: 1px solid #eee;
 }
 .contained-form input[type="submit"] {
+  border-radius: 0px 3px 3px 0px;
+  position: relative;
+  right: 0px;
+  top: 1px;
+}
+.contained-form input[type="submit1"] {
   border-radius: 0px 3px 3px 0px;
   position: relative;
   right: 0px;
@@ -565,6 +601,10 @@ form a {
     border-top: 1px solid #eee;
   }
   .contained-form input[type="submit"] {
+    border-radius: 0px 0px 3px 3px;
+    top: 0;
+  }
+  .contained-form input[type="submit1"] {
     border-radius: 0px 0px 3px 3px;
     top: 0;
   }
@@ -1441,6 +1481,16 @@ nav ul li:hover .subnav .subnav {
   background: #fff;
   color: #0785f2;
 }
+.callout-1 input[type="submit1"] {
+  border-left: none;
+  position: relative;
+  top: 1px;
+  padding: 0 24px;
+}
+.callout-1 input[type="submit1"]:hover {
+  background: #fff;
+  color: #0785f2;
+}
 .callout-1 ::-webkit-input-placeholder {
   color: #fff !important;
 }
@@ -1604,6 +1654,13 @@ nav.dismiss-active {
   max-width: 458px;
   float: right;
 }
+.header-1 .inner1 {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 0px;
+  width: 0;
+  float: right;
+}
 @media all and (max-width: 990px) {
   .header-1 h2 br {
     display: none;
@@ -1625,6 +1682,10 @@ nav.dismiss-active {
     float: none;
     margin: 0 auto;
   }
+  .header-1 .inner1 {
+    float: none;
+    margin: 0 auto;
+  }
 }
 @media all and (max-width: 767px) {
   .header-1 {
@@ -1635,6 +1696,10 @@ nav.dismiss-active {
     width: 100%;
   }
   .header-1 .inner {
+    background: none;
+    padding: 0;
+  }
+  .header-1 .inner1 {
     background: none;
     padding: 0;
   }
@@ -1905,6 +1970,9 @@ nav.dismiss-active {
     border-bottom: none;
   }
   .header-6 form input[type="submit"] {
+    border-radius: 0px 0px 3px 3px;
+  }
+  .header-6 form input[type="submit1"] {
     border-radius: 0px 0px 3px 3px;
   }
 }
@@ -2898,6 +2966,9 @@ nav.dismiss-active {
   .cta-7 form input[type="submit"] {
     border-radius: 0px 0px 3px 3px;
   }
+  .cta-7 form input[type="submit1"] {
+    border-radius: 0px 0px 3px 3px;
+  }
 }
 .cta-8 {
   padding: 120px 0;
@@ -3447,6 +3518,10 @@ nav.dismiss-active {
   max-width: 375px;
   margin: 0 auto;
 }
+.pricing-4 .inner1 {
+  max-width: 0;
+  margin: 0 auto;
+}
 .pricing-4 h3 {
   margin-bottom: 40px;
 }
@@ -3459,6 +3534,7 @@ nav.dismiss-active {
 }
 @media all and (max-width: 990px) {
   .pricing-4 .inner,
+  .pricing-4 .inner1,
   .pricing-4 .pricing-option {
     max-width: 100%;
   }
@@ -3529,6 +3605,11 @@ nav.dismiss-active {
   opacity: 0.6;
 }
 .pricing-5 .inner {
+  float: left;
+  display: inline-block;
+  width: 80%;
+}
+.pricing-5 .inner1 {
   float: left;
   display: inline-block;
   width: 80%;
@@ -4139,6 +4220,11 @@ footer .container {
   right: 4px;
   top: 1px;
 }
+.footer-6 input[type="submit1"] {
+  position: relative;
+  right: 4px;
+  top: 1px;
+}
 .footer-6 h6 {
   margin-bottom: 20px;
 }
@@ -4153,6 +4239,10 @@ footer .container {
     width: 70%;
   }
   .footer-6 input[type="submit"] {
+    width: 25%;
+    padding: 0;
+  }
+  .footer-6 input[type="submit1"] {
     width: 25%;
     padding: 0;
   }
